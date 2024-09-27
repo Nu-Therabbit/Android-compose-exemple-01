@@ -116,7 +116,7 @@ fun BatterInformationScreen(modifier: Modifier, context: Context? = LocalContext
             ) {
                 Spacer(modifier = Modifier.height(18.dp))
                 Text(
-                    text = "Battery Statu",
+                    text = "Battery Status",
                     style = MaterialTheme.typography.bodyLarge,
                     fontWeight = FontWeight.Bold,
                     fontFamily = nunitoFamily,
