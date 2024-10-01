@@ -21,7 +21,7 @@ googleFonts = "1.7.2"
 appcompat = "1.7.0"
 material = "1.12.0"
 androidDesugarJdkLibs = "2.1.2"
-composeCompiler = "1.5.15"
+koin = "3.5.3"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -46,6 +46,8 @@ accompanist-permissions = { group = "com.google.accompanist", name = "accompanis
 androidx-ui-google-fonts = { group = "androidx.compose.ui", name = "ui-text-google-fonts", version.ref = "googleFonts" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+koin-compose = { group = "io.insert-koin", name = "koin-androidx-compose", version.ref = "koin" }
+koin = { group = "io.insert-koin", name = "koin-android", version.ref = "koin" }
 
 #--- Dependencies of the included build-logic ---#
 android-gradle-plugin = { group = "com.android.tools.build", name = "gradle", version.ref = "agp" }

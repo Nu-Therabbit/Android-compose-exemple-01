@@ -6,3 +6,11 @@ plugins {
 android {
     namespace = "com.example.feature.battery"
 }
+
+dependencies {
+    implementation(project(":core:model"))
+    implementation(project(":navigation"))
+
+    implementation(libs.koin)
+    implementation(libs.koin.compose)
+}

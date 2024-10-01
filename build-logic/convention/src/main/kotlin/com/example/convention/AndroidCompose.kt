@@ -9,8 +9,6 @@ internal fun Project.configureAndroidCompose(
 ) {
     commonExtension.apply {
         buildFeatures.compose = true
-        composeOptions.kotlinCompilerExtensionVersion =
-            libs.versionString("composeCompiler")
 
         dependencies {
             // https://developer.android.com/develop/ui/compose/setup
