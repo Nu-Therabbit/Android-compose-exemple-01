@@ -15,21 +15,19 @@ sealed interface Screen : Destination {
     @Serializable
     data object Battery : Screen
 
-    @Serializable
-    sealed class PermissionScreen : Screen {
+    sealed interface PermissionScreen : Screen {
         @Serializable
-        data object First : PermissionScreen()
+        data object First : PermissionScreen
 
         @Serializable
-        data object SinglePermission : PermissionScreen()
+        data object SinglePermission : PermissionScreen
 
         @Serializable
-        data object MultiplePermission : PermissionScreen()
+        data object MultiplePermission : PermissionScreen
     }
 
-    @Serializable
-    sealed class AnimationScreen {
+    sealed interface AnimationScreen : Screen {
         @Serializable
-        data object First : AnimationScreen()
+        data object First : AnimationScreen
     }
 }
